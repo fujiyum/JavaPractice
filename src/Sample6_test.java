@@ -1,4 +1,4 @@
-import javax.sound.midi.SysexMessage;
+import java.io.*;
 
 class Sample6_test
 {
