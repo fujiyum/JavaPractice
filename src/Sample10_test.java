@@ -1,4 +1,3 @@
-import java.io.IOException;
 
 class Sample10_test
 {
