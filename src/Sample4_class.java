@@ -1,16 +1,22 @@
 class Car1
 {
-    int num;
-    double gas;
+    private int num;
+    private double gas;
 
-    void setNumGas(int n, double g)
+    public void setNumGas(int n, double g)
     {
+        if(g > 0 && g < 1000){
         num = n;
         gas = g;
         System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+        }
+        else{
+            System.out.println(g + "は正しいガソリン量ではありません。");
+            System.out.println("ガソリン量を変更できませんでした。");
+        }
     }
 
-    void show()
+    public void show()
     {
         System.out.println("車のナンバーは" + num + "です。");
         System.out.println("ガソリン量は" + gas + "です。");
@@ -24,9 +30,12 @@ class Sample4_class
     {
         Car1 car1 = new Car1();
 
-        int number = 1234;
-        double gasoline = 20.5;
+        car1.setNumGas(1234, 20.5);
+        car1.show();
 
-        car1.setNumGas(number, gasoline);
+        System.out.println("正しくないガソリン量(-10.0)を指定してみます・・・。");
+
+        car1.setNumGas(1234, -10.0);
+        car1.show();
     }
 }
