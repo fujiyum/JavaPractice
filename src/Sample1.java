@@ -1,60 +1,18 @@
 //画面に文字を出力するコード
 class Sample1
- {
-    public static void main(String[] args)
-    {
-        System.out.println("ようこそJavaへ!");
-        System.out.println("Javaをはじめよう!");
-    }
-}
-
-class Sample3
-{
-  public static void main(String[] args)
-  {
-      System.out.println('A');
-      System.out.println("ようこそJavaへ！");
-      System.out.println(123);
-  }  
-}
-
-class Sample4
 {
     public static void main(String[] args)
     {
-        System.out.println("円記号を表示します。:\\");
-        System.out.println("アポストロフィを表示します。:\'");
+        String str = "Hello";
+
+        char ch1 = str.charAt(0);
+        char ch2 = str.charAt(1);
+
+        int len = str.length();
+
+        System.out.println(str + "の1番目の文字は" + ch1 + "です。");
+        System.out.println(str + "の2番目の文字は" + ch2 + "です。");
+        System.out.println(str + "文字の長さは" + len + "です。");
     }
 }
-
-class Sample5
-{
-    public static void main(String[] args)
-    {
-        System.out.println("8進数101の文字は\101です。");
-        System.out.println("16進数0061の文字は\u0061です。");
-    }
-}
-
-class Sample6
-{
-    public static void main(String[] args)
-    {
-        System.out.println("10進数の10は" + 10 + "です。");
-        System.out.println("8進数の10は" + 010 + "です。");
-        System.out.println("16進数の10は" + 0x10 + "です。");
-        System.out.println("16進数のFは" + 0xF + "です。");
-    }
-}
-
-class Sample7
-{
-    public static void main(String[] args)
-    {
-        int num = 3;
-        System.out.println("変数numの値は" + num + "です。");
-    }
-}
-
-
 
