@@ -1,4 +1,4 @@
-class Car2
+class Car1
 {
     private int num;
     private double gas;
@@ -17,7 +17,6 @@ class Car2
     {
         num = n;
         gas = g;
-
         System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました");
     }
     public void show()
@@ -27,17 +26,17 @@ class Car2
     }
 }
 
-class Sample3_overloading
+class lesson9_2
 {
     public static void main(String[] args)
     {
-        Car2 car1 = new Car2();
-        
+        Car1 car1 = new Car1();
+
         car1.setCar(1234, 20.5);
         car1.show();
 
         System.out.println("車のナンバーだけ変更します");
-        car1.setCar(2345);
+        car1.setCar(5678);
         car1.show();
 
         System.out.println("ガソリン量だけ変更します");
