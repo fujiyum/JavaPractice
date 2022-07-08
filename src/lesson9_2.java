@@ -11,13 +11,13 @@ class Car1
     public void setCar(double g)
     {
         gas = g;
-        System.out.println("ガソリン量を" + gas + "にしました");
+        System.out.println("ガゾリン量を" + gas + "にしました");
     }
     public void setCar(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました");
+        System.out.println("ナンバーを" + num + "にしました" + "ガゾリン量を" + gas + "にしました");
     }
     public void show()
     {

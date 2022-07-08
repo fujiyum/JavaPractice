@@ -3,19 +3,21 @@ class Car2
     private int num;
     private double gas;
 
-    public Car2()
+    private Car2()
     {
         num = 0;
         gas = 0.0;
-        System.out.println("車を製作しました");
+        System.out.println("車を作成しました");
     }
+
     public Car2(int n, double g)
     {
         this();
         num = n;
         gas = g;
-        System.out.println("ナンバー" + num + "ガソリン量" + gas +"の車を作成しました");
+        System.out.println("ナンバーを" + n + "に" + "ガソリン量を" + g + "にしました");
     }
+
     public void show()
     {
         System.out.println("車のナンバーは" + num + "です");
@@ -25,12 +27,15 @@ class Car2
 }
 class lesson9_3
 {
+    /**
+     * @param args
+     */
     public static void main(String[] args)
     {
-        Car2 car1 = new Car2();
-        car1.show();
+        //Car2 car1 = new Car2();
+        //car1.show();
 
-        Car2 car2 = new Car2(1234, 20.5);
+        Car2 car2 = new Car2(1234, 30.5);
         car2.show();
     }
 }
